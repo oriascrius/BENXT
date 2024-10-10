@@ -1,0 +1,40 @@
+header {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 8px 30px;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  nav {
+    margin: auto;
+    width: 100%;
+    height: 60px;
+  }
+  svg {
+    width: 125px;
+    height: 50px;
+  }
+  .btn {
+    padding: 8px;
+    border: 0;
+    border-color: transparent;
+  }
+  .btn.show {
+    border: 0;
+    border-color: transparent;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  ul {
+    gap: 15px;
+    .header-nav-last-btn {
+      padding: 0.2rem 0.8rem 0.4rem;
+      background-color: #e24e0f;
+      border: solid 2px transparent;
+      border-radius: 10rem;
+      &:hover {
+        background-color: #4bcbe0;
+      }
+    }
+  }
+}

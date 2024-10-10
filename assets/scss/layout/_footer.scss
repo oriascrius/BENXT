@@ -1,0 +1,36 @@
+footer {
+  padding: 1rem;
+  background: #000340;
+  .contact-info {
+    font-size: 0.875rem;
+    font-weight: 400;
+    a {
+      color: #00d8f3;
+    }
+  }
+
+  .event-info,
+  .media-info {
+    font-size: 1.125rem;
+    font-weight: 600;
+    list-style-type: none;
+    padding-left: 0 !important;
+    line-height: 2;
+    margin-bottom: 8px;
+    margin-left: 4px;
+    ul {
+      gap: 10px;
+    }
+    a {
+      color: white;
+    }
+  }
+  .customer-service {
+    margin-top: 8px;
+  }
+  .customer-service,
+  .copyright {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}

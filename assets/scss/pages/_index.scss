@@ -1,0 +1,114 @@
+body {
+  font-family: "Noto Sans TC", 微軟正黑體, "Arial Narrow", Rubik, "Noto Sans TC",
+    sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+// 回到頂部按鈕
+.toTop-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  z-index: 100;
+  background: #272c81;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0; /* 初始透明度为 0 */
+  visibility: hidden; /* 初始时按钮不可见 */
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s; /* 渐变效果 */
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 24;
+    font-size: 30px; /* 控制图标大小 */
+    margin-top: 5px;
+  }
+}
+.show {
+  opacity: 1; /* 显示时的透明度 */
+  visibility: visible; /* 显示时可见 */
+  transition: opacity 0.5s ease; /* 渐变效果 */
+}
+// 整頁背景圖片設定
+.custon-background {
+  position: relative;
+  background-image: url("../images/indexBg.jpg");
+  background-attachment: fixed;
+  background-position: 50% top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; /* 使背景图宽度占满父元素 */
+  height: 100vh; /* 背景图高度占满视口 */
+  z-index: -1; /* 背景置于所有内容下 */
+}
+// banner 圖片
+.bannerImg {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 926px;
+  height: 405px;
+  svg {
+    width: 320px;
+    height: 115px;
+    margin-top: 60px;
+    margin-left: 450px;
+    @media (max-width: 768px) {
+      width: 280px;
+      height: 112px;
+      margin-top: 40px;
+      margin-left: 0;
+      margin-right: 200px;
+    }
+  }
+}
+// Q & A
+.qa-wrap {
+  padding: 16px 0 48px 0;
+  background: rgba(0, 0, 0, 0.4);
+  ul {
+    gap: 30px;
+  }
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  span {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: "Candal", "Oswald", sans-serif;
+  }
+  h4 {
+    font-size: 1.375rem;
+    margin-bottom: 12px;
+  }
+  a {
+    color: #00d8f3;
+  }
+}
