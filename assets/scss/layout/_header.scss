@@ -25,6 +25,12 @@ header {
   .dropdown:hover .dropdown-menu {
     display: block;
   }
+  .dropdown-item {
+    transition: background-color 0.2s ease-in-out 0.1s; /* 延迟0.5秒，持续0.3秒 */
+  }
+  .dropdown-item:hover {
+    background-color: #00d8f3;
+  }
   ul {
     gap: 15px;
     .header-nav-last-btn {
@@ -35,6 +41,13 @@ header {
       &:hover {
         background-color: #4bcbe0;
       }
+    }
+  }
+  @media (max-width: 768px) {
+    background-color: rgb(0 0 0);
+    .navbar-collapse {
+      padding: 20px 0;
+      background-color: rgb(0 0 0);
     }
   }
 }
