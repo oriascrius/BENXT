@@ -363,7 +363,6 @@ h5 {
 .excitingAgenda {
   overflow: hidden;
   padding-top: 1rem;
-  padding-bottom: 3rem;
   background-color: #031b44eb;
 
   .excitingAgenda-title {
@@ -480,7 +479,12 @@ h5 {
 
 }
 
+// 精彩議程 - 新玩法部分
 .excitingAgenda-NewSolution {
+  li {
+    border-radius: 10px 0 0 0;
+  }
+
   h3 {
     display: flex;
     align-items: center;
@@ -515,20 +519,190 @@ h5 {
     left: 15px;
   }
 
-  span {
-    background: #000a9a;
+  h2 {
+    font-weight: 700;
+    color: #010a9a;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    margin-bottom: 20px;
+
+    span {
+      background: #000a9a;
+      color: #fff;
+      font-style: italic;
+      padding: 1px 5px;
+      font-size: 1rem;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+  }
+
+  p {
+    font-size: 1.125rem;
+
+    span {
+      color: #000A9A;
+    }
+  }
+
+  h5 {
+    color: #000;
+    font-weight: 550;
+    font-size: 1.375rem;
+    margin-bottom: 10px;
+  }
+
+  .excitingAgenda-NewSolution-card {
+    margin-bottom: 60px;
+  }
+}
+
+// 合作廠商
+.partNer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #000;
+  background-color: #ffffffd6;
+
+  h6 {
+    font-size: 1.125rem;
+  }
+
+  a {
+    img {
+      width: 100px;
+      margin-right: 15px;
+    }
+  }
+}
+
+// 報名資訊
+.registRationForm {
+  background: #4bcbe0;
+  color: #000;
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Candal', 'Oswald', sans-serif;
+  }
+
+  a {
     color: #fff;
-    font-style: italic;
-    padding: 1px 5px;
+  }
+
+  p {
+    margin-bottom: .2rem;
     font-size: 1rem;
-    margin-right: 10px;
-    font-weight: bold;
+  }
+
+  strong {
+    color: #120085;
+    font-size: 1.125rem;
+  }
+
+  span {
+    font-family: 'Candal', 'Oswald', sans-serif;
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    line-height: 1.8rem;
+  }
+}
+
+// 數位新商業論壇
+.aboutBNEXTSummit {
+  background-image: url("../images/aboutBNEXTSummit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-color: #000;
+  opacity: .9;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+
+  h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Candal', 'Oswald', sans-serif;
+  }
+
+  span {
+    font-size: 54px;
+    font-weight: 600;
+    color: #00d8f3;
+    font-family: 'Candal', 'Oswald', sans-serif;
+  }
+
+  h4 {
+    font-size: 1.375rem;
   }
 }
 
 
+//  歷屆講者
+.pastSpeakers {
+  color: #fff;
+  background-image: linear-gradient(45deg, rgb(236 87 23 / 87%) 20%, rgb(6 7 40) 50%, rgb(1 3 58 / 74%) 65%, rgb(72 195 214 / 88%) 80%);
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  background-color: #031b44eb;
 
+  h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0;
+  }
 
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Candal', 'Oswald', sans-serif;
+  }
+
+  ul {
+    gap: 45px;
+  }
+
+  img {
+    width: 260px;
+    height: 297px;
+  }
+
+  .pastSpeakers-text {
+    padding: 10px 15px;
+    min-height: 120px;
+    background-color: #01033d;
+    color: #fff;
+  }
+
+}
 
 
 
