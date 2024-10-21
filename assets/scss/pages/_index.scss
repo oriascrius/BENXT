@@ -291,13 +291,23 @@ h5 {
   .speakerRoster-card {
     padding: 32px 24px;
     margin: 0 auto;
+
+    @media (max-width:992px) {
+      padding: 0;
+    }
   }
 
   .speakerRoster-card-left {
     padding: 72px 200px 48px 96px;
-    width: 800px;
+    max-width: 800px;
     height: 472px;
     background-image: linear-gradient(to right, rgba(53, 76, 202, 0.575) 20%, rgba(23, 196, 226, 0.671) 60%);
+
+    @media (max-width:992px) {
+      padding: 48px;
+      // max-width: 320px;
+      height: 660px;
+    }
   }
 
   h2 {
@@ -348,13 +358,25 @@ h5 {
     font-size: 45px;
     opacity: .6;
     line-height: .95;
+    @media (max-width:992px) {
+      bottom: 2rem;
+    }
   }
 
   .speakerRoster-card-right {
-    width: 612px;
-    height: 408px;
+    position: absolute;
+    max-width: 612px;
+    max-height: 408px;
     top: 32px;
     right: -500px;
+
+    @media (max-width:992px) {
+      position: relative;
+      max-width: 300px;
+      max-height: 312px;
+      top: 20px;
+      right: 0;
+    }
   }
 }
 
